@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { requireEditor } from "@/lib/api-auth";
 
+export const runtime = "nodejs";
+
 export async function GET(request, context) {
   const sessionAuth = await requireEditor();
   if (sessionAuth.error) {

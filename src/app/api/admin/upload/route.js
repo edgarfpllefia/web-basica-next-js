@@ -4,6 +4,8 @@ import path from "path";
 import { randomUUID } from "crypto";
 import { requireEditor } from "@/lib/api-auth";
 
+export const runtime = "nodejs";
+
 // Llista blanca de tipus d'imatge per evitar pujades arbitraries
 const ALLOWED = new Set(["image/jpeg", "image/png", "image/webp", "image/gif"]);
 const MAX_BYTES = 2 * 1024 * 1024; // 2 MB (demo)
