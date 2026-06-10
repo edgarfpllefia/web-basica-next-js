@@ -5,7 +5,7 @@ Web corporativa de l'empresa fictícia **"Serveis Informàtics"** construïda am
 
 ## 🔗 Enllaç de producció
 
-> _Pendent de deploy_
+https://web-basica-next-js.vercel.app/
 
 **Credencials de demo:**
 
