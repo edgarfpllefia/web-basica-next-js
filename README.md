@@ -8,6 +8,7 @@ Web corporativa de l'empresa fictícia **"Serveis Informàtics"** construïda am
 > _Pendent de deploy_
 
 **Credencials de demo:**
+
 - Email: `admin@demo.local`
 - Contrasenya: `demo1234`
 
@@ -16,11 +17,13 @@ Web corporativa de l'empresa fictícia **"Serveis Informàtics"** construïda am
 ## 📋 Checkpoints de progrés
 
 ### S12 — Base Next.js
+
 - [x] Projecte creat amb `create-next-app` i Next.js 16
 - [x] App Router, layouts i convencions bàsiques
 - [x] Estructura de carpetes amb route groups `(site)` i `(dashboard)`
 
 ### S13 — Web multipàgina
+
 - [x] Rutes públiques: `/`, `/sobre`, `/serveis`, `/contacte`, `/blog`, `/api-demo`
 - [x] Layout públic amb navegació i `NavLink` actiu
 - [x] Blog amb llista i detall dinàmic (`/blog/[slug]`) i `notFound()`
@@ -29,6 +32,7 @@ Web corporativa de l'empresa fictícia **"Serveis Informàtics"** construïda am
 - [x] Dashboard amb sidebar (`_components`) i route group `(dashboard)`
 
 ### S14 — Persistència amb PostgreSQL i Prisma
+
 - [x] PostgreSQL amb Docker Compose
 - [x] Prisma 7 amb `prisma.config.ts` i adapter `@prisma/adapter-pg`
 - [x] Model `Post` amb slug, title, excerpt, content
@@ -36,6 +40,7 @@ Web corporativa de l'empresa fictícia **"Serveis Informàtics"** construïda am
 - [x] Migracions amb `prisma migrate dev`
 
 ### S15 — Auth, rols i CRUD
+
 - [x] Model `User` amb rol (`ADMIN` / `EDITOR`) i `passwordHash`
 - [x] Camp `imageUrl` i `updatedAt` al model `Post`
 - [x] Auth.js (next-auth@beta) amb proveïdor Credentials i JWT
@@ -50,23 +55,24 @@ Web corporativa de l'empresa fictícia **"Serveis Informàtics"** construïda am
 
 ## 🛠️ Stack tecnològic
 
-| Tecnologia | Ús |
-|---|---|
-| Next.js 16 | Framework fullstack (App Router) |
-| React 19 | Interfície d'usuari |
-| Tailwind CSS 4 | Estils utilitaris |
-| Prisma 7 | ORM per a PostgreSQL |
-| PostgreSQL 16 | Base de dades relacional |
-| Auth.js (next-auth) | Autenticació amb JWT |
-| Docker | Base de dades en local |
+| Tecnologia          | Ús                               |
+| ------------------- | -------------------------------- |
+| Next.js 16          | Framework fullstack (App Router) |
+| React 19            | Interfície d'usuari              |
+| Tailwind CSS 4      | Estils utilitaris                |
+| Prisma 7            | ORM per a PostgreSQL             |
+| PostgreSQL 16       | Base de dades relacional         |
+| Auth.js (next-auth) | Autenticació amb JWT             |
+| Docker              | Base de dades en local           |
 
 ---
 
 ## 🚀 Instal·lació i execució en local
 
 ### Requisits
+
 - Node.js 20+
-- Docker Desktop
+- Docker Desktop.
 
 ### Passos
 
