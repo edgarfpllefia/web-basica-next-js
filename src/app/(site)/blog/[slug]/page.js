@@ -4,14 +4,6 @@ import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
-// "Oye Next.js, crea una página estática para cada uno de estos slugs"
-export async function generateStaticParams() {
-  const posts = await prisma.post.findMany({
-    select: { slug: true },
-  });
-  return posts.map((p) => ({ slug: p.slug }));
-}
-
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
 
