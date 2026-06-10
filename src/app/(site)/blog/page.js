@@ -1,7 +1,11 @@
 import Link from "next/link";
-import { posts } from "./data";
+import { prisma } from "../../../../lib/prisma";
 
-export default function BlogIndexPage() {
+export default async function BlogIndexPage() {
+  const posts = await prisma.post.findMany({
+    orderBy: { createdAt: "desc" },
+  });
+
   return (
     <section className="space-y-6">
       <h1 className="text-3xl font-bold text-slate-900">Blog</h1>

@@ -1,4 +1,5 @@
 import "./globals.css";
+import Providers from "./providers";
 
 //Esta constante sirve para el SEO, poniendo title y descripc
 export const metadata = {
@@ -9,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ca">
-      <body className="min-h-screen text-slate-800 ">{children}</body>
+      <body className="min-h-screen text-slate-800 ">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
